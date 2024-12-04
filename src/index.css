@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-pagination-bullet {
+  @apply bg-white opacity-50;
+}
+
+.swiper-pagination-bullet-active {
+  @apply opacity-100;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply !hidden md:!flex;
+}
+
+.carousel-arrow {
+  @apply invisible absolute top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/90 text-gray-800 shadow-lg transition-all duration-300 hover:bg-white hover:text-black hover:shadow-xl md:visible;
+}
+
+.carousel-arrow.swiper-button-disabled {
+  @apply cursor-not-allowed opacity-50 hover:bg-white/90 hover:text-gray-800;
+}
+
+.carousel-arrow-prev {
+  @apply left-4;
+}
+
+.carousel-arrow-next {
+  @apply right-4;
+}
